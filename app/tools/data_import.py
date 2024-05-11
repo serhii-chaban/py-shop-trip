@@ -1,8 +1,8 @@
 import json
 
-from app.cls.car import Car
-from app.cls.customer import Customer
-from app.cls.shop import Shop
+from app.classes.car import Car
+from app.classes.customer import Customer
+from app.classes.shop import Shop
 
 
 def data_import() -> tuple[list[Customer], list[Shop], float]:

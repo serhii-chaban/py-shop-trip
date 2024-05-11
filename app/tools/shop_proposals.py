@@ -1,5 +1,5 @@
-from app.cls.customer import Customer
-from app.cls.shop import Shop
+from app.classes.customer import Customer
+from app.classes.shop import Shop
 
 
 def propose(

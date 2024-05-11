@@ -1,4 +1,4 @@
-from app.cls.customer import Customer
+from app.classes.customer import Customer
 
 
 class Shop:

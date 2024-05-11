@@ -1,4 +1,4 @@
-from app.cls.car import Car
+from app.classes.car import Car
 
 
 class Customer:
