@@ -1,3 +1,5 @@
+import math
+
 from app.classes.customer import Customer
 
 
@@ -13,10 +15,7 @@ class Shop:
         self.products = products
 
     def distance_to_customer(self, customer: Customer) -> float:
-        return (
-            (customer.location[0] - self.location[0]) ** 2
-            + (customer.location[1] - self.location[1]) ** 2
-        ) ** 0.5
+        return math.dist(self.location, customer.location)
 
     def calc_shop_path(
             self,

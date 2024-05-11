@@ -18,21 +18,21 @@ def shop_trip() -> None:
             customer.location = best_shop.location
 
             date = datetime.datetime.now()
-            print(f"Date: {date.strftime('%d/%m/%Y %H:%M:%S')}")
-            print(f"Thanks, {customer.name}, for your purchase!")
-            print("You have bought:")
+            print(f"Date: {date.strftime('%d/%m/%Y %H:%M:%S')}\n"
+                  f"Thanks, {customer.name}, for your purchase!\n"
+                  "You have bought:")
 
             for product, quantity in customer.product_cart.items():
 
                 print(f"{quantity} {product}s for"
                       f"{quantity * best_shop.products[product]: g} dollars")
 
-            print(f"Total cost is {bill} dollars")
-            print("See you again!\n")
+            print(f"Total cost is {bill} dollars\n"
+                  "See you again!\n")
 
-            print(f"{customer.name} rides home")
             customer.location = home_location
-            print(f"{customer.name} now has "
+            print(f"{customer.name} rides home\n"
+                  f"{customer.name} now has "
                   f"{customer.money - bill - path_price} dollars\n")
 
         else:
